@@ -1,0 +1,27 @@
+Recursion ??--
+    When  afunction calls itself until the specified condition is  met 
+    --> If there is no spefied condition is mention there there is  a Infinite Recursion
+    --> When there is Infinite Recursion then it Causes the condition known as Stack OverFlow 
+      explaination 
+        -->  Method is stored in A stack memory 
+            --> and removed when method Return statement xecutes 
+            --> in Infinite Recursion methods keeps calling anohter method and there is no [Complete execution of any method ] return 
+            --Then the called methods keeps added on top of the current  stack and they are stays on wait  ,
+            -->the methods keeps on calling another methods then there is segmentation Fault happens And This is called as Stack OverFlow    
+
+    
+    --> Always Keep in mind while using recursion  , writing the Recursive Method
+        --> Always Write  Base [Termination ]Condition of method before the Recursive call of method ;
+            --> There may be single base condition or multiple base conditions also 
+
+
+    Recursion Tree : Its A diagram of how the calls Made 
+                     : F() --->F() --> F() ---> F()  calling
+                     F() <---F() <-- F() <--- F()  Returns 
+
+    >Recursion
+    >Base Case
+    >Stack Overflow | Stack Spcae ( a space where the remaning not completed functions stores )
+    > Recurion Tree 
+
+
