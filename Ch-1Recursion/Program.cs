@@ -14,6 +14,7 @@ namespace Ch_1Recursion
             Console.WriteLine("10+20 ::" + Program.Add(10, 20));
             int cnt = 0;
             Program.Print(ref cnt);
+            Program.Print1ToCnt(cnt);
 
         }
 
@@ -26,11 +27,28 @@ namespace Ch_1Recursion
         public static void Print(ref int cnt)
         {
             if (cnt == 4)
+            {
+                Console.WriteLine("count :"+cnt);
                 return;
+            }
 
             Console.WriteLine(" count :" + cnt);
             cnt++;
             Print(ref cnt);
+        }
+
+        public static void Print1ToCnt(int cnt ) // Funtional recursion 
+        {
+            if (cnt == 1)
+            {
+                Console.WriteLine(cnt);
+                return; // this return statement is must in case of method is void then also 
+            }
+
+            Print1ToCnt(cnt - 1);
+            Console.WriteLine(cnt);
+
+
         }
     }
 

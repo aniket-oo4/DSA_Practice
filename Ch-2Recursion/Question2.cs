@@ -11,6 +11,7 @@ namespace Ch_2Recursion
         static void Main(string[] args)
         {
             Print1toN(1, 10);
+            Console.ReadKey();
         }
 
         public static void Print1toN(int i,int n)

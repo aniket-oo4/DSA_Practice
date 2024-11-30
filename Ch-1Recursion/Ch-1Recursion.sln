@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Windows Desktop
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35514.174
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch-1Recursion", "Ch-1Recursion.csproj", "{BBADA426-6605-4723-A13B-6F9FB20914FE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch-2Recursion", "..\Ch-2Recursion\Ch-2Recursion.csproj", "{0B8EAB01-7256-4745-9CB1-6B5FA8DCB56B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch-3RecursionPractice", "..\Ch-3RecursionPractice\Ch-3RecursionPractice.csproj", "{11221279-00F7-4261-8160-86643E6618CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +23,10 @@ Global
 		{0B8EAB01-7256-4745-9CB1-6B5FA8DCB56B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B8EAB01-7256-4745-9CB1-6B5FA8DCB56B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B8EAB01-7256-4745-9CB1-6B5FA8DCB56B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11221279-00F7-4261-8160-86643E6618CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11221279-00F7-4261-8160-86643E6618CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11221279-00F7-4261-8160-86643E6618CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11221279-00F7-4261-8160-86643E6618CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
