@@ -14,12 +14,18 @@
 
             //Console.WriteLine("PArameterised  The Sum of First 10 Natural Numbers  :" + sumOfFirstN(10,0));
             //Console.WriteLine("Functional  The Sum of First 10 Natural Numbers  :" + SumOfFirstN(10));
-            Console.WriteLine("Factirial of 5 : " + Factorial(5));
+            //Console.WriteLine("Factirial of 5 : " + Factorial(5));
 
-            int[] arr = { 3, 1, 4, 2, 77, 5, 33, 90 };
-            PrintArray(arr);
-            ReverseArray(arr, 0, arr.Length - 1); // using two pointers 
-            PrintArray(arr);
+            //int[] arr = { 3, 1, 4, 2, 77, 5, 33, 90 };
+            //PrintArray(arr);
+            //ReverseArray(arr, 0, arr.Length - 1); // using two pointers 
+            //ReverseArray(arr, 0);//using single variable 
+            //PrintArray(arr);
+
+            String str = "MadaM";String str2 = "hello";
+            //Console.WriteLine(" String is Palindrome  or not  :" + IsPalindrome(str,0));
+            Console.WriteLine(" String is Palindrome  or not  :" + IsPalindrome(str2, 0));
+            Console.WriteLine(" String is Palindrome  or not  :" + IsPalindrome(str, 0,str.Length-1));
         }
 
         //------Recursive Methods That Prints Something Does not returns  
@@ -27,7 +33,7 @@
         // using 2 variables 
         public static void Print1ToN(int i,int n)
         {
-            if (i > n) return; // bas case for the recursion end remeber that the return statement is must in Recursion 
+            if (i > n) return; // base case for the recursion end remeber that the return statement is must in Recursion 
 
             Console.WriteLine("N:" + i);
             Print1ToN(i+1, n); //1-10
@@ -65,7 +71,7 @@
         {
             if (n == 0)
             {
-                return sum;
+                return sum;// or print sum then return 
             }
             return sumOfFirstN(n - 1, sum + n); //<-- value of First n has been continued as an addition to the parameter , thats why it called as parameterised approach 
         }
@@ -113,10 +119,33 @@
         }
         public static void ReverseArray(int [] arr, int i )
         {
-            if (i > arr.Length - 1) ;
-            SwapArray<int>(ref arr, i, arr.Length - i - 1);
+            if (i > arr.Length/2) return ; //O(log n) n/2
+            SwapArray<int>(ref arr, i, arr.Length - i - 1); // last -1 is for last index 
             ReverseArray(arr, i + 1);
+        }
 
+        // Palindrom string check 
+
+        public static bool IsPalindrome(string str ,int i)
+        {
+            if (i >= str.Length - i - 1) // o(log n)  n/2 cause we are doing like two pointers // but only using single variable 
+            {
+                return true;
+            }
+            if (str[i] != str[str.Length - i - 1])
+                return false;
+            return IsPalindrome(str, i + 1);
+
+        }
+        
+        public static bool IsPalindrome(string str , int left , int right)
+        {
+            if(left>=right)
+                return true;
+            if (str[left] != str[right])
+                return false;
+
+            return IsPalindrome(str, left + 1, right - 1);
         }
 
 
