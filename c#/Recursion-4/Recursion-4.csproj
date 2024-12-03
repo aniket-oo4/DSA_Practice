@@ -6,6 +6,7 @@
     <RootNamespace>Recursion_4</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <StartupObject>Recursion_4.Re_5</StartupObject>
   </PropertyGroup>
 
 </Project>
