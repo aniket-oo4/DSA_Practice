@@ -2,6 +2,14 @@
 {
     internal class Program
     {
+
+        //Hashin methods for Dictionary <map >
+        /*
+         *  there are three methods which are come into picture when we called out word hashing on list of data we can create hsah by using following 3 method s
+         *  1. Division method --> element/something  eg / 2/10 =2  the index will be 2  <-- Most of the time this method will be used 
+         *  2.  Folding method
+         *  3. mod Square method 
+         * */
         static void Main(string[] args)
         { // before starting this file please go to problem2.cs cause i used advanced concept of hashing directly here before array hashing here only read first intro then go to problem2 then jump here 
             Console.WriteLine("Hello, World!");
@@ -103,7 +111,7 @@
 
             //----------------------------------
             /*
-             * 
+             * --> When you got TLE time limit exceeded then and then only use SortedDictionary 
              * 2. SortedDictionary<TKey, TValue>  -- map in c++ which stores data in sorting order based on  on keys  all operations time complexities are o(log n) 
              * most of the cases we use unordered map aka Dictionary because of its lower time complexity  for larger data set 
                     A SortedDictionary is implemented as a Red-Black Tree (a type of balanced binary search tree). It keeps the keys in sorted order, which means operations that depend on ordering (e.g., Min, Max, First, Last) are more expensive than in a Dictionary, but it ensures the keys are always sorted.
