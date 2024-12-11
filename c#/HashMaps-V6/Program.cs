@@ -63,14 +63,23 @@
             ToArray()	                O(n)	                    O(n)
             CopyTo(array, index)	    O(n)	                    O(n)            
             */
+            // dictObj.Values.Max() //Min() // return minimum , or maximum among all the valuees stored in that dict
+            /*
+         prorperties of Dictionary 
+            Property	Description	Data Type	                                                Usage Example
+            Count	    Gets the number of key-value pairs contained in the Dictionary.	        int	int count = myDict.Count;
+            Comparer	Gets the IEqualityComparer<TKey> used to determine equality of keys.	IEqualityComparer<TKey>	var comparer = myDict.  Comparer;
+            Keys	    Gets a collection containing the keys in the Dictionary.	            ICollection<TKey>	var keys = myDict.Keys;
+            Values	    Gets a collection containing the values in the Dictionary.	            ICollection<TValue>	var values = myDict.Values;
+            */
             //Example 
 
 
             int n = Convert.ToInt32(Console.ReadLine());
-            int[] arr = new int[n];  // always keep in mind we cannot declare the array above the size of 10^6 inside Main  if we declare 10^+1 then it become segmentation fault ,
-                                     // cause compiler does not allow to alllocate that much memory in main method 
-                                     // If arrra is declared Globally then it can be allowcated memory 
-            int[] arr2 = new int[(int)1e8]; // 1e6 is nothing but  10^8;
+            int[] arr = new int[n];  // always keep in mind we cannot declare the array above the size of 10^6 inside Main  if we declare 10^6+1 then it become segmentation fault ,
+                                     // cause compiler does not allow to allocate that much memory in main method 
+                                     // If array is declared Globally then it can be allowcated memory 
+            int[] arr2 = new int[(int)1e8]; // 1e8 is nothing but  10^8;
             Console.WriteLine($"arr2 length :{arr2.Length}");
             Dictionary<int, int> numbersFrequencyMap = new Dictionary<int, int>();
             Console.WriteLine(  $"Enter  {n}  numbers (press enter after each element .)");
@@ -95,7 +104,7 @@
             {
                 Console.WriteLine($"Enter    number To Search frequency  (press enter after each element .) : ");
                 int num = Convert.ToInt32(Console.ReadLine());
-                 if(numbersFrequencyMap.ContainsKey(num))  // fetching o(1) ,sp=o(n)
+                 if(numbersFrequencyMap.ContainsKey(num))  // fetching o(1) ,sc=o(n)
                 {
                     Console.WriteLine($"Frequency of number :{num}: {numbersFrequencyMap[num]}");  //accessing o(1)
                 }
@@ -117,21 +126,21 @@
                     A SortedDictionary is implemented as a Red-Black Tree (a type of balanced binary search tree). It keeps the keys in sorted order, which means operations that depend on ordering (e.g., Min, Max, First, Last) are more expensive than in a Dictionary, but it ensures the keys are always sorted.
                     
                     Operations and Time Complexities:
-                    Operation	Time Complexity	Space Complexity
-                    Add(key, value)	O(log n)	O(n)
-                    Remove(key)	O(log n)	O(n)
-                    ContainsKey(key)	O(log n)	O(n)
-                    ContainsValue(value)	O(n)	O(n)
-                    TryGetValue(key, out value)	O(log n)	O(n)
-                    Indexer (this[key])	O(log n)	O(n)
-                    Clear()	O(n)	O(n)
-                    Count (getter)	O(1)	O(1)
-                    Keys (getter)	O(1)	O(n)
-                    Values (getter)	O(1)	O(n)
-                    ToArray()	O(n)	O(n)
-                    CopyTo(array, index)	O(n)	O(n)
-                    Min (getter)	O(log n)	O(1)
-                    Max (getter)	O(log n)	O(1)
+                    Operation	                    Time Complexity	Space Complexity
+                    Add(key, value)	                O(log n)	        O(n)
+                    Remove(key)	                    O(log n)	        O(n)
+                    ContainsKey(key)	            O(log n)	        O(n)
+                    ContainsValue(value)	        O(n)	            O(n)
+                    TryGetValue(key, out value) 	O(log n)	        O(n)
+                    Indexer (this[key])	            O(log n)	        O(n)
+                    Clear()	                        O(n)	            O(n)
+                    Count (getter)	                O(1)	            O(1)
+                    Keys (getter)	                O(1)	            O(n)
+                    Values (getter)	                O(1)	            O(n)
+                    ToArray()	                    O(n)	            O(n)
+                    CopyTo(array, index)	        O(n)	            O(n)
+                    Min (getter)	                O(log n)	        O(1)
+                    Max (getter)	                O(log n)	        O(1)
              * */
         }
     }

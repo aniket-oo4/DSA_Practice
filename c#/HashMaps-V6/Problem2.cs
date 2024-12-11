@@ -22,12 +22,12 @@ namespace HashMaps_V6
 
             Console.WriteLine("Enter your string ::");
             string  str = Console.ReadLine();
-            int[] arr = new int[26]; // inc case for all the characters use new int [256]  to store all the unicode chars and  keep there index as it is there ascii codes 
+            int[] arr = new int[26]; // in  case for all the unicode characters use new int [256]  to store all the unicode chars and  keep there index as it is there ascii codes 
             // always use array hashing for the character hash  because of there will not be more than 256 characters 
-            // for integer hashing use another  better ways cause array had limited storage capacity  it only stotres the numbers hah till 10^7  , it will not take 10^8 9 12 3and so on 
-            // thats why to solve this problem languages introduced concepts of collection -jav,c#, stl -c++ 
+            // for integer hashing use another  better ways cause array had limited storage capacity  it only stotres the numbers  till 10^7  , it will not take 10^8 9 12 3and so on 
+            // thats why to solve this problem languages introduced concepts of collection -java,c#, stl -c++ 
             //cpp= map, unordered_map , c# = sortedDictionary , Dictionary 
-            for(int i = 0; i < str.Length; i++)
+            for(int i = 0; i < str.Length-1; i++)
             {
                 //arr[GetHash(str[i])] = arr[GetHash(str[i])]>0? arr[GetHash(str[i])]: Count(str, str[i],i);
                 //or
