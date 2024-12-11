@@ -6,7 +6,7 @@
     <RootNamespace>_6Sorting</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>_6Sorting.BubbleSort</StartupObject>
+    <StartupObject>_6Sorting.InsertionSort</StartupObject>
   </PropertyGroup>
 
 </Project>
