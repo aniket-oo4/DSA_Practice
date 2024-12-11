@@ -74,6 +74,25 @@ namespace _6Sorting
                     }
                 }
             }
+
+            /*
+             * 
+             *by selecting maximum and sort 
+             *for (int n=nums.Length-1;n>0; n--) //o(n)
+            {
+                for(int j = n - 1; j >= 0; j--) //O(n-1)
+                {
+                    if (nums[j] > nums[n])
+                    {
+                        Swap(ref nums, j, n);
+                    }
+                }
+            }
+             * 
+             * 
+             * */
+
+
         }
 
     }
