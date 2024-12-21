@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace _6Sorting
 {/*
   * Insertion sort is nothing but the sort which selects an element and places it at the right position 
-  * eg if i is 4 and value of that index is 71 it will look backward indexes susch as 3,2,1,0  and swaps with them untill the !arr[i]>arr[current](71);
+  * eg if i is 4 and value of that index is 71 it will look backward indexes susch as 3,2,1,0  and swaps with them untill the !arr[i]<arr[current](71);
   *  
   *  algo 
-  *     for i=0;i<length-1;i++
+  *     for i=0;i<length-1;i++  //end one step before 
   *     int j=i; //j is  current  and j-1 is previous 
   *         while( j>0 && arr[j]<arr[j-1])
   *             swap (arr[j],arr[j-1]);

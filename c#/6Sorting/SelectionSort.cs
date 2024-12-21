@@ -10,7 +10,7 @@ namespace _6Sorting
     {
         /*
          * algorithm motive  : select minimum and swap 
-         * Selection sort is an algorithms which selects the key and compare it with another values till end and swap the keyvalue if the compared value is smaller than key 
+         * Selection sort is an algorithm which selects the key and compare it with another values till end and swap the keyvalue if the compared value is smaller than key 
          * 
          * for i =0 ;i<=Length-2;i++;  <--  this loop goes till  last index -1 cause the array will be sorted there 
          *      for j =i+1 ;j<=Length-1 ;j++   <-- this loop  goes till last index of first loop till end 
@@ -31,7 +31,7 @@ namespace _6Sorting
          *  second loop executes such as 
          *      n-1 + n-2+ n-3 + n-4 + n-5 so on 
          *   by applying formula of sum of first natural n *(n+1)/2== n^2 /2 +n/2 ==n^ +n 
-         *   final time complexity cause  we ignore smaller things(n/2)  and constanct  (/2) --> n^2 
+         *   final time complexity cause  we ignore smaller things(n/2)  and constant  (/2) --> n^2 
          *   
          *   Best   -->O(n^2)
          *   Average-->O(n^2)
@@ -66,13 +66,18 @@ namespace _6Sorting
         {
             for(int i=0; i <= nums.Length - 2; i++)  
             {
+                int mini=i;
                 for(int j = i + 1; j <= nums.Length - 1; j++)
                 {
-                    if (nums[i] > nums[j])
-                    {
-                        SwapArrayValues(ref nums, i, j);
+                    // if (nums[i] > nums[j])
+                    // {
+                    //     SwapArrayValues(ref nums, i, j);
+                    // }
+                    if(nums[mini]>nums[j]){
+                        mini=j;
                     }
                 }
+                SwapArrayValues(ref nums,i,mini);
             }
 
             /*

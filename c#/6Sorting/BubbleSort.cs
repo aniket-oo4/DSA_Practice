@@ -10,8 +10,8 @@ namespace _6Sorting
     { // Select Maximum and then swap  start from end 
         // Bubble Sort is nothing but the selecting the maximum element and placing it to the end of the list 
         //Bubble Sort Compares the Adjacent Values  [which are side by side ] arr[j] ,arr[j+1] 
-        /* for(i=length-1;i>=0;i--)
-         *      for( j=0;j<i-1;j++)
+        /* for(i=length-1;i>0;i--)
+         *      for( j=0;j<=i-1;j++)
          *          if(arr[j])> arr[j+1];
          *              swapt(arr[j],arr[j+1]);
          * 
