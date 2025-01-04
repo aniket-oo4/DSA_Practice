@@ -6,7 +6,7 @@
     <RootNamespace>HashMaps_V6</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>HashMaps_V6.Problem2</StartupObject>
+    <StartupObject>problems.Program</StartupObject>
   </PropertyGroup>
 
 </Project>
