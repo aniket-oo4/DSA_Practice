@@ -1,4 +1,4 @@
-﻿namespace Ch_3RecursionPractice
+﻿namespace _6Sorting
 {
     internal class Program
     {
