@@ -8,7 +8,7 @@
          *  there are three methods which are come into picture when we called out word hashing on list of data we can create hsah by using following 3 method s
          *  1. Division method --> element/something  eg / 2/10 =2  the index will be 2  <-- Most of the time this method will be used 
          *  2.  Folding method
-         *  3. mod Square method 
+         *  3. mid Square method 
          * */
         static void Main(string[] args)
         { // before starting this file please go to problem2.cs cause i used advanced concept of hashing directly here before array hashing here only read first intro then go to problem2 then jump here 
@@ -55,11 +55,11 @@
             ContainsKey(key)	        O(1) (amortized)	        O(n)
             ContainsValue(value)	    O(n)	                    O(n)
             TryGetValue(key, out value)	O(1) (amortized)	        O(n)
-            Indexer (this[key])	        O(1) (amortized)	        O(n)
+indexer-->  Indexer (this[key])	        O(1) (amortized)	        O(n)
             Clear()                 	O(n)	                    O(n)
             Count (getter)	            O(1)	                    O(1)
-            Keys (getter)	            O(1)	                    O(n)
-            Values (getter)	            O(1)	                    O(n)
+Property->  Keys (getter)	            O(1)	                    O(n)
+Property->  Values (getter)	            O(1)	                    O(n)
             ToArray()	                O(n)	                    O(n)
             CopyTo(array, index)	    O(n)	                    O(n)            
             */
