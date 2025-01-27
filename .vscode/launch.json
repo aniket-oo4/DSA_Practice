@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C#: Sorting Debug",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/c#/6Sorting/Sorting.csproj"
+        }
+
+
+    ],
+    "inputs": [
+    {
+      "type": "promptString",
+      "id": "programPath",
+      "description": "c#/6Sorting/Sorting.dll)"
+    }
+  ]
+}
